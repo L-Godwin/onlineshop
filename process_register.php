@@ -2,11 +2,11 @@
 // Database connection settings.
 // Values are read from Azure App Service "Environment variables" (App settings) if set,
 // otherwise they fall back to the workshop defaults below.
-$serverName = getenv('DB_SERVER') ?: "tcp:mycardiffmet.database.windows.net,1433";
+$serverName = getenv('DB_SERVER') ?: "tcp:st20299012-wk5.database.windows.net,1433";
 $connectionOptions = array(
     "Database" => getenv('DB_NAME') ?: "myDatabase",
-    "Uid"      => getenv('DB_USER') ?: "myadmin",
-    "PWD"      => getenv('DB_PASSWORD') ?: "Abcdefgh0!",
+    "Uid"      => getenv('DB_USER') ?: "SystemAdmin",
+    "PWD"      => getenv('DB_PASSWORD') ?: "1nV3nTi0n!",
     "Encrypt"  => 1,
     "TrustServerCertificate" => 0
 );
